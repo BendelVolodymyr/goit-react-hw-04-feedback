@@ -1,0 +1,30 @@
+.feedback__btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &_good {
+    background-color: #4caf50;
+    &:hover {
+      background-color: #388e3c;
+    }
+  }
+
+  &_neutral {
+    background-color: #607d8b;
+    &:hover {
+      background-color: #455a64;
+    }
+  }
+  &_bad {
+    background-color: #f44336;
+    &:hover {
+      background-color: #c62828;
+    }
+  }
+}

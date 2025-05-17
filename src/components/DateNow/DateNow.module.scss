@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  color: #f58529;
+}
+
+.dateText {
+  font-size: 24px;
+  font-weight: bold;
+  background-image: linear-gradient(45deg, #f58529, #dd2a7b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: colorShift 5s cubic-bezier(0.25, 0.8, 0.25, 1) infinite;
+}
+
+@keyframes colorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
